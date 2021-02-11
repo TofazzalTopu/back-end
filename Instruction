@@ -1,0 +1,16 @@
+
+1. create database cms_db_live
+
+2. restore the sql file
+
+3. build and run the project
+
+4. 
+   client id       : cms-web-read-write-client
+   client password : cms-web-read-write-client1234
+
+   username        : riad
+   password        : 123
+
+
+5. import the json collection

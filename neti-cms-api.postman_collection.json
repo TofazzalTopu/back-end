@@ -1,0 +1,293 @@
+{
+	"id": "73734629-ea8f-db33-f438-86ded35149a6",
+	"name": "neti-cms-api",
+	"description": "",
+	"order": [
+		"b417cae4-29e7-b786-a368-0a3d2a13d49d",
+		"00cd4a31-3468-7742-c304-adc43b15c00d",
+		"29647d23-d103-8c36-93c1-816a2757121f",
+		"86e827a1-283f-747e-1726-e97ef8e9f321",
+		"b1aea5aa-e479-ff60-79d2-3f5c605fcc45",
+		"f2c37ca8-aa53-736e-7f5a-e506d4baf290",
+		"e3538a6c-6fe5-709f-7818-0d6def0a9ff3"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1523808212487,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "00cd4a31-3468-7742-c304-adc43b15c00d",
+			"headers": "Authorization: Basic YXV0aG9yaXphdGlvbi13ZWItcmVhZC13cml0ZS1jbGllbnQ6MTIzNA==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YXV0aG9yaXphdGlvbi13ZWItcmVhZC13cml0ZS1jbGllbnQ6MTIzNA==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "authorization-web-read-write-client",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "refresh_token",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refresh_token",
+					"value": "7e5cc3cf-0ea7-4ff3-8f14-3158e4dc4fa1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "authorization-web-read-write-client",
+				"password": "1234",
+				"saveToRequest": true
+			},
+			"time": 1544978070785,
+			"name": "Access Token by refresh token",
+			"description": "Get access token",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"responses": [],
+			"collection_id": "73734629-ea8f-db33-f438-86ded35149a6"
+		},
+		{
+			"id": "29647d23-d103-8c36-93c1-816a2757121f",
+			"headers": "Authorization: Bearer 9fc64516-969f-46bf-8c0c-e4b226b35253\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 9fc64516-969f-46bf-8c0c-e4b226b35253",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/list",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1544980250866,
+			"name": "user-list",
+			"description": "Get list of core setting type wise",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"responses": [],
+			"collection_id": "73734629-ea8f-db33-f438-86ded35149a6"
+		},
+		{
+			"id": "86e827a1-283f-747e-1726-e97ef8e9f321",
+			"headers": "Authorization: Bearer 9fc64516-969f-46bf-8c0c-e4b226b35253\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 9fc64516-969f-46bf-8c0c-e4b226b35253",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545056833905,
+			"name": "user-create",
+			"description": "",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"responses": [],
+			"rawModeData": "{\n\t\n\"username\" : \"naim\",\n\"password\" : \"123\",\n\"userRoles\" : [\"ROLE_OPERATOR\"]\n\t\n\t\n}",
+			"collection_id": "73734629-ea8f-db33-f438-86ded35149a6"
+		},
+		{
+			"id": "b1aea5aa-e479-ff60-79d2-3f5c605fcc45",
+			"headers": "Authorization: Bearer 9fc64516-969f-46bf-8c0c-e4b226b35253\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 9fc64516-969f-46bf-8c0c-e4b226b35253",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/delete?id=4",
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"data": null,
+			"dataMode": "params",
+			"name": "user-delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1544979821570,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "73734629-ea8f-db33-f438-86ded35149a6"
+		},
+		{
+			"id": "b417cae4-29e7-b786-a368-0a3d2a13d49d",
+			"headers": "Authorization: Basic Y21zLXdlYi1yZWFkLXdyaXRlLWNsaWVudDpjbXMtd2ViLXJlYWQtd3JpdGUtY2xpZW50MTIzNA==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y21zLXdlYi1yZWFkLXdyaXRlLWNsaWVudDpjbXMtd2ViLXJlYWQtd3JpdGUtY2xpZW50MTIzNA==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "riad",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "cms-web-read-write-client",
+				"password": "cms-web-read-write-client1234",
+				"saveToRequest": true
+			},
+			"time": 1592298943561,
+			"name": "Access Token",
+			"description": "Get access token",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"responses": []
+		},
+		{
+			"id": "e3538a6c-6fe5-709f-7818-0d6def0a9ff3",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/public/user/list",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"data": null,
+			"dataMode": "params",
+			"name": "user-list-by-public",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1592302008415,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f2c37ca8-aa53-736e-7f5a-e506d4baf290",
+			"headers": "Authorization: bearer 6f7f1435-be26-4c28-8949-f93091dde5e6\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer 6f7f1435-be26-4c28-8949-f93091dde5e6",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/user/oauth/revoke-token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "73734629-ea8f-db33-f438-86ded35149a6",
+			"data": null,
+			"dataMode": "params",
+			"name": "revoke-token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1545057346780,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "73734629-ea8f-db33-f438-86ded35149a6"
+		}
+	]
+}

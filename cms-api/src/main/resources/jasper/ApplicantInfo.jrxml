@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ApplicantInfo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="10a22941-2cfc-4dd7-b290-bf204dcea37a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="With Image Data Adapter"/>
+	<queryString language="json">
+		<![CDATA[item]]>
+	</queryString>
+	<field name="applicantId" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicantId"/>
+		<fieldDescription><![CDATA[applicantId]]></fieldDescription>
+	</field>
+	<field name="registrationId" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="registrationId"/>
+		<fieldDescription><![CDATA[registrationId]]></fieldDescription>
+	</field>
+	<field name="applicantName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicantName"/>
+		<fieldDescription><![CDATA[applicantName]]></fieldDescription>
+	</field>
+	<field name="rollNo" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="rollNo"/>
+		<fieldDescription><![CDATA[rollNo]]></fieldDescription>
+	</field>
+	<field name="mobileNo" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="mobileNo"/>
+		<fieldDescription><![CDATA[mobileNo]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="gender"/>
+		<fieldDescription><![CDATA[gender]]></fieldDescription>
+	</field>
+	<field name="religion" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="religion"/>
+		<fieldDescription><![CDATA[religion]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="dob"/>
+		<fieldDescription><![CDATA[dob]]></fieldDescription>
+	</field>
+	<field name="birthCertificateNo" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="birthCertificateNo"/>
+		<fieldDescription><![CDATA[birthCertificateNo]]></fieldDescription>
+	</field>
+	<field name="fatherName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fatherName"/>
+		<fieldDescription><![CDATA[fatherName]]></fieldDescription>
+	</field>
+	<field name="fatherNidNo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fatherNidNo"/>
+		<fieldDescription><![CDATA[fatherNidNo]]></fieldDescription>
+	</field>
+	<field name="fatherOccupation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fatherOccupation"/>
+		<fieldDescription><![CDATA[fatherOccupation]]></fieldDescription>
+	</field>
+	<field name="motherName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="motherName"/>
+		<fieldDescription><![CDATA[motherName]]></fieldDescription>
+	</field>
+	<field name="motherNidNo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="motherNidNo"/>
+		<fieldDescription><![CDATA[motherNidNo]]></fieldDescription>
+	</field>
+	<field name="motherOccupation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="motherOccupation"/>
+		<fieldDescription><![CDATA[motherOccupation]]></fieldDescription>
+	</field>
+	<field name="addressDetails" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="addressDetails"/>
+		<fieldDescription><![CDATA[addressDetails]]></fieldDescription>
+	</field>
+	<field name="applicationDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicationDate"/>
+		<fieldDescription><![CDATA[applicationDate]]></fieldDescription>
+	</field>
+	<field name="statusUpdateDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="statusUpdateDate"/>
+		<fieldDescription><![CDATA[statusUpdateDate]]></fieldDescription>
+	</field>
+	<field name="applicantStatus" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicantStatus"/>
+		<fieldDescription><![CDATA[applicantStatus]]></fieldDescription>
+	</field>
+	<field name="applicantFeeStatus" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicantFeeStatus"/>
+		<fieldDescription><![CDATA[applicantFeeStatus]]></fieldDescription>
+	</field>
+	<field name="quota" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="quota"/>
+		<fieldDescription><![CDATA[quota]]></fieldDescription>
+	</field>
+	<field name="fileName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fileName"/>
+		<fieldDescription><![CDATA[fileName]]></fieldDescription>
+	</field>
+	<field name="fileContent" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fileContent"/>
+		<fieldDescription><![CDATA[fileContent]]></fieldDescription>
+	</field>
+	<field name="academicYear" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="academicYear"/>
+		<fieldDescription><![CDATA[academicYear]]></fieldDescription>
+	</field>
+	<field name="clasName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="clasName"/>
+		<fieldDescription><![CDATA[clasName]]></fieldDescription>
+	</field>
+	<field name="groupName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="groupName"/>
+		<fieldDescription><![CDATA[groupName]]></fieldDescription>
+	</field>
+	<field name="applicationStartDate" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicationStartDate"/>
+		<fieldDescription><![CDATA[applicationStartDate]]></fieldDescription>
+	</field>
+	<field name="applicationEndDate" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="applicationEndDate"/>
+		<fieldDescription><![CDATA[applicationEndDate]]></fieldDescription>
+	</field>
+	<field name="totalFee" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="totalFee"/>
+		<fieldDescription><![CDATA[totalFee]]></fieldDescription>
+	</field>
+	<field name="admissionExamStatus" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="admissionExamStatus"/>
+		<fieldDescription><![CDATA[admissionExamStatus]]></fieldDescription>
+	</field>
+	<field name="autoApproveStatus" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="autoApproveStatus"/>
+		<fieldDescription><![CDATA[autoApproveStatus]]></fieldDescription>
+	</field>
+	<field name="admissionExamDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="admissionExamDate"/>
+		<fieldDescription><![CDATA[admissionExamDate]]></fieldDescription>
+	</field>
+	<field name="admissionExamTime" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="admissionExamTime"/>
+		<fieldDescription><![CDATA[admissionExamTime]]></fieldDescription>
+	</field>
+	<field name="admissionExamInstruction" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="admissionExamInstruction"/>
+		<fieldDescription><![CDATA[admissionExamInstruction]]></fieldDescription>
+	</field>
+	<field name="examCenterName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="examCenterName"/>
+		<fieldDescription><![CDATA[examCenterName]]></fieldDescription>
+	</field>
+	<field name="districtId" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="districtId"/>
+		<fieldDescription><![CDATA[districtId]]></fieldDescription>
+	</field>
+	<field name="districtName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="districtName"/>
+		<fieldDescription><![CDATA[districtName]]></fieldDescription>
+	</field>
+	<field name="divisionId" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="divisionId"/>
+		<fieldDescription><![CDATA[divisionId]]></fieldDescription>
+	</field>
+	<field name="divisionName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="divisionName"/>
+		<fieldDescription><![CDATA[divisionName]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="278" splitType="Stretch">
+			<textField>
+				<reportElement x="260" y="30" width="100" height="30" uuid="7a20cb18-7580-40df-8756-5513d03fdd18">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d15e5ec-b54b-48e2-9e7e-d8af2612e549"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{registrationId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="60" width="100" height="30" uuid="39a9017c-6712-42ac-82c2-75acf3542839">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5dcb843b-5c95-4efb-9c0e-4fce7c963eee"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{applicantName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="90" width="100" height="30" uuid="3f2c49f2-8727-4540-9888-390dfff4fff4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="260fc5e9-a88b-4084-bdae-cc5848ae075b"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{mobileNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="120" width="100" height="30" uuid="2b1ef5e7-bce7-4423-b265-7713dd0a2704">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9b2cc9b4-7619-4f4a-8439-a693cdc04230"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="20" y="30" width="130" height="120" uuid="558ad36b-b680-4766-87d9-65ce5cc9ca44"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($F{fileContent}.getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="160" y="30" width="100" height="30" uuid="4a036930-3e8e-4fe4-b448-63f5c88cfe9d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d15e5ec-b54b-48e2-9e7e-d8af2612e549"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[registrationId :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="60" width="100" height="30" uuid="64fdda37-9051-48a9-a399-f7a4398aa794">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5dcb843b-5c95-4efb-9c0e-4fce7c963eee"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[applicantName :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="90" width="100" height="30" uuid="c1da9ca3-dcd1-4eb1-8fa6-0f0caff2d8da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="260fc5e9-a88b-4084-bdae-cc5848ae075b"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[mobileNo :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="120" width="100" height="30" uuid="7a75fdb8-3c00-4848-a264-b984eccdb649">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9b2cc9b4-7619-4f4a-8439-a693cdc04230"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[gender :]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
